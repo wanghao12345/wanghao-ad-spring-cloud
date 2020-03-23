@@ -1,9 +1,18 @@
 package com.wanghao.ad.service;
 
 import com.wanghao.ad.exception.AdException;
-import com.wanghao.ad.vo.AdUnitRequest;
-import com.wanghao.ad.vo.AdUnitResponse;
+import com.wanghao.ad.vo.*;
 
 public interface IAdUnitService {
-    AdUnitResponse createUnit(AdUnitRequest request) throws AdException;
+    AdUnitResponse createUnit(AdUnitRequest request)
+        throws AdException;
+
+    AdUnitKeywordResponse createUnitKeyword(AdUnitKeywordRequest request)
+        throws AdException;
+
+    AdUnitItResponse createUnitIt(AdUnitItRequest request)
+        throws AdException;
+
+    AdUnitDistrictResponse createUnitDistrict(AdUnitDistrictRequest request)
+        throws AdException;
 }
