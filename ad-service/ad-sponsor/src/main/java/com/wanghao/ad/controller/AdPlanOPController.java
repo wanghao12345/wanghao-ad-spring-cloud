@@ -46,7 +46,7 @@ public class AdPlanOPController {
 
     @PostMapping("/delete/adPlan")
     public void deleteAdPlan(@RequestBody AdPlanRequest request) throws AdException{
-        log.info("ad-sponsor: updateAdPlan -> {}", JSON.toJSONString(request));
+        log.info("ad-sponsor: deleteAdPlan -> {}", JSON.toJSONString(request));
         adPlanService.deleteAdPlan(request);
     }
 
