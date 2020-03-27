@@ -14,7 +14,7 @@ spring:
       hibernate.format_sql: true
     open-in-view: false
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/wanghao_ad_data?autoReconnect=true
+    url: jdbc:mysql://127.0.0.1:3306/wanghao_ad_data?autoReconnect=true&useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
     password: wanghao19940914
     tomcat:

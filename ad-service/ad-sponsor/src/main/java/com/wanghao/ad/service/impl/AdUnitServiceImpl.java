@@ -18,11 +18,13 @@ import com.wanghao.ad.exception.AdException;
 import com.wanghao.ad.service.IAdUnitService;
 import com.wanghao.ad.vo.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
+@Service
 public class AdUnitServiceImpl implements IAdUnitService {
 
     private final AdPlanRepository planRepository;

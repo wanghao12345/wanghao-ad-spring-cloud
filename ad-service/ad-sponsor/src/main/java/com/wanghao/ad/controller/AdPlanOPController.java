@@ -9,6 +9,7 @@ import com.wanghao.ad.vo.AdPlanRequest;
 import com.wanghao.ad.vo.AdPlanResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -48,6 +49,11 @@ public class AdPlanOPController {
     public void deleteAdPlan(@RequestBody AdPlanRequest request) throws AdException{
         log.info("ad-sponsor: deleteAdPlan -> {}", JSON.toJSONString(request));
         adPlanService.deleteAdPlan(request);
+    }
+
+    @GetMapping("/get/test")
+    public String getTest() throws AdException {
+        return "12313";
     }
 
 }
